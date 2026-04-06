@@ -2,13 +2,13 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "8f878882",
+   "id": "6dec4f53",
    "metadata": {
     "papermill": {
-     "duration": 0.003194,
-     "end_time": "2026-04-06T23:37:01.537522",
+     "duration": 0.004895,
+     "end_time": "2026-04-06T23:41:40.100006",
      "exception": false,
-     "start_time": "2026-04-06T23:37:01.534328",
+     "start_time": "2026-04-06T23:41:40.095111",
      "status": "completed"
     },
     "tags": []
@@ -21,13 +21,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "b00c8b4f",
+   "id": "89fd270d",
    "metadata": {
     "papermill": {
-     "duration": 0.002018,
-     "end_time": "2026-04-06T23:37:01.543087",
+     "duration": 0.003489,
+     "end_time": "2026-04-06T23:41:40.107677",
      "exception": false,
-     "start_time": "2026-04-06T23:37:01.541069",
+     "start_time": "2026-04-06T23:41:40.104188",
      "status": "completed"
     },
     "tags": []
@@ -43,19 +43,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "bdcbb8c8",
+   "id": "54c55584",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:37:01.549309Z",
-     "iopub.status.busy": "2026-04-06T23:37:01.548464Z",
-     "iopub.status.idle": "2026-04-06T23:37:03.512121Z",
-     "shell.execute_reply": "2026-04-06T23:37:03.510965Z"
+     "iopub.execute_input": "2026-04-06T23:41:40.117380Z",
+     "iopub.status.busy": "2026-04-06T23:41:40.116897Z",
+     "iopub.status.idle": "2026-04-06T23:41:42.322468Z",
+     "shell.execute_reply": "2026-04-06T23:41:42.321373Z"
     },
     "papermill": {
-     "duration": 1.968506,
-     "end_time": "2026-04-06T23:37:03.513772",
+     "duration": 2.212856,
+     "end_time": "2026-04-06T23:41:42.324455",
      "exception": false,
-     "start_time": "2026-04-06T23:37:01.545266",
+     "start_time": "2026-04-06T23:41:40.111599",
      "status": "completed"
     },
     "tags": []
@@ -76,13 +76,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "76c46aa0",
+   "id": "e5c8ed29",
    "metadata": {
     "papermill": {
-     "duration": 0.003488,
-     "end_time": "2026-04-06T23:37:03.519918",
+     "duration": 0.003032,
+     "end_time": "2026-04-06T23:41:42.331131",
      "exception": false,
-     "start_time": "2026-04-06T23:37:03.516430",
+     "start_time": "2026-04-06T23:41:42.328099",
      "status": "completed"
     },
     "tags": []
@@ -94,19 +94,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "7992c845",
+   "id": "5001556c",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:37:03.526143Z",
-     "iopub.status.busy": "2026-04-06T23:37:03.525782Z",
-     "iopub.status.idle": "2026-04-06T23:37:06.880229Z",
-     "shell.execute_reply": "2026-04-06T23:37:06.879416Z"
+     "iopub.execute_input": "2026-04-06T23:41:42.340091Z",
+     "iopub.status.busy": "2026-04-06T23:41:42.338898Z",
+     "iopub.status.idle": "2026-04-06T23:41:45.588295Z",
+     "shell.execute_reply": "2026-04-06T23:41:45.586799Z"
     },
     "papermill": {
-     "duration": 3.358861,
-     "end_time": "2026-04-06T23:37:06.881458",
+     "duration": 3.256057,
+     "end_time": "2026-04-06T23:41:45.590381",
      "exception": false,
-     "start_time": "2026-04-06T23:37:03.522597",
+     "start_time": "2026-04-06T23:41:42.334324",
      "status": "completed"
     },
     "tags": []
@@ -116,7 +116,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Validation MAE for Random Forest Model: 17,653\n"
+      "Validation MAE for Random Forest Model: 17,906\n"
      ]
     }
    ],
@@ -133,7 +133,7 @@
     "y = home_data.SalePrice\n",
     "\n",
     "# Create X (After completing the exercise, you can return to modify this line!)\n",
-    "features = ['PoolArea','OpenPorchSF','Fireplaces','HalfBath','LowQualFinSF','YearRemodAdd','OverallQual', 'OverallCond','GrLivArea','LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']\n",
+    "features = ['MSSubClass', 'LotArea','OverallQual','OverallCond','YearBuilt','YearRemodAdd','1stFlrSF','2ndFlrSF','LowQualFinSF','GrLivArea','FullBath','HalfBath','BedroomAbvGr','KitchenAbvGr','TotRmsAbvGrd','Fireplaces','WoodDeckSF','OpenPorchSF','EnclosedPorch','3SsnPorch','ScreenPorch','PoolArea','MiscVal','MoSold','YrSold']\n",
     "# Select columns corresponding to features, and preview the data\n",
     "X = home_data[features]\n",
     "X.head()\n",
@@ -153,19 +153,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "13380d2d",
+   "id": "a9568593",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:37:06.887972Z",
-     "iopub.status.busy": "2026-04-06T23:37:06.887182Z",
-     "iopub.status.idle": "2026-04-06T23:37:06.891986Z",
-     "shell.execute_reply": "2026-04-06T23:37:06.891022Z"
+     "iopub.execute_input": "2026-04-06T23:41:45.602302Z",
+     "iopub.status.busy": "2026-04-06T23:41:45.601828Z",
+     "iopub.status.idle": "2026-04-06T23:41:45.607812Z",
+     "shell.execute_reply": "2026-04-06T23:41:45.606458Z"
     },
     "papermill": {
-     "duration": 0.008991,
-     "end_time": "2026-04-06T23:37:06.893063",
+     "duration": 0.013259,
+     "end_time": "2026-04-06T23:41:45.609804",
      "exception": false,
-     "start_time": "2026-04-06T23:37:06.884072",
+     "start_time": "2026-04-06T23:41:45.596545",
      "status": "completed"
     },
     "tags": []
@@ -178,19 +178,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "4cf9c6bf",
+   "id": "93b7e378",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:37:06.899133Z",
-     "iopub.status.busy": "2026-04-06T23:37:06.898901Z",
-     "iopub.status.idle": "2026-04-06T23:37:06.935875Z",
-     "shell.execute_reply": "2026-04-06T23:37:06.934946Z"
+     "iopub.execute_input": "2026-04-06T23:41:45.619850Z",
+     "iopub.status.busy": "2026-04-06T23:41:45.618944Z",
+     "iopub.status.idle": "2026-04-06T23:41:45.757189Z",
+     "shell.execute_reply": "2026-04-06T23:41:45.755644Z"
     },
     "papermill": {
-     "duration": 0.041174,
-     "end_time": "2026-04-06T23:37:06.936919",
+     "duration": 0.145195,
+     "end_time": "2026-04-06T23:41:45.759148",
      "exception": false,
-     "start_time": "2026-04-06T23:37:06.895745",
+     "start_time": "2026-04-06T23:41:45.613953",
      "status": "completed"
     },
     "tags": []
@@ -224,13 +224,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "0322bb5c",
+   "id": "b6ad2565",
    "metadata": {
     "papermill": {
-     "duration": 0.002125,
-     "end_time": "2026-04-06T23:37:06.941809",
+     "duration": 0.003399,
+     "end_time": "2026-04-06T23:41:45.766364",
      "exception": false,
-     "start_time": "2026-04-06T23:37:06.939684",
+     "start_time": "2026-04-06T23:41:45.762965",
      "status": "completed"
     },
     "tags": []
@@ -246,19 +246,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "d32d7d41",
+   "id": "4ad9690a",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:37:06.947570Z",
-     "iopub.status.busy": "2026-04-06T23:37:06.947291Z",
-     "iopub.status.idle": "2026-04-06T23:37:07.581054Z",
-     "shell.execute_reply": "2026-04-06T23:37:07.580127Z"
+     "iopub.execute_input": "2026-04-06T23:41:45.775314Z",
+     "iopub.status.busy": "2026-04-06T23:41:45.774234Z",
+     "iopub.status.idle": "2026-04-06T23:41:46.964695Z",
+     "shell.execute_reply": "2026-04-06T23:41:46.963584Z"
     },
     "papermill": {
-     "duration": 0.638157,
-     "end_time": "2026-04-06T23:37:07.582203",
+     "duration": 1.196613,
+     "end_time": "2026-04-06T23:41:46.966303",
      "exception": false,
-     "start_time": "2026-04-06T23:37:06.944046",
+     "start_time": "2026-04-06T23:41:45.769690",
      "status": "completed"
     },
     "tags": []
@@ -288,13 +288,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "dd28670d",
+   "id": "127f02b8",
    "metadata": {
     "papermill": {
-     "duration": 0.002827,
-     "end_time": "2026-04-06T23:37:07.587700",
+     "duration": 0.003154,
+     "end_time": "2026-04-06T23:41:46.973260",
      "exception": false,
-     "start_time": "2026-04-06T23:37:07.584873",
+     "start_time": "2026-04-06T23:41:46.970106",
      "status": "completed"
     },
     "tags": []
@@ -306,19 +306,19 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "41626f8c",
+   "id": "5b707a1a",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:37:07.594173Z",
-     "iopub.status.busy": "2026-04-06T23:37:07.593376Z",
-     "iopub.status.idle": "2026-04-06T23:37:07.640778Z",
-     "shell.execute_reply": "2026-04-06T23:37:07.640075Z"
+     "iopub.execute_input": "2026-04-06T23:41:46.981871Z",
+     "iopub.status.busy": "2026-04-06T23:41:46.981121Z",
+     "iopub.status.idle": "2026-04-06T23:41:47.056199Z",
+     "shell.execute_reply": "2026-04-06T23:41:47.054821Z"
     },
     "papermill": {
-     "duration": 0.051856,
-     "end_time": "2026-04-06T23:37:07.642153",
+     "duration": 0.081493,
+     "end_time": "2026-04-06T23:41:47.058067",
      "exception": false,
-     "start_time": "2026-04-06T23:37:07.590297",
+     "start_time": "2026-04-06T23:41:46.976574",
      "status": "completed"
     },
     "tags": []
@@ -333,7 +333,7 @@
     "\n",
     "# create test_X which comes from test_data but includes only the columns you used for prediction.\n",
     "# The list of columns is stored in a variable called features\n",
-    "features = ['PoolArea','OpenPorchSF','Fireplaces','HalfBath','LowQualFinSF','YearRemodAdd','OverallQual', 'OverallCond','GrLivArea','LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']\n",
+    "features = ['MSSubClass', 'LotArea','OverallQual','OverallCond','YearBuilt','YearRemodAdd','1stFlrSF','2ndFlrSF','LowQualFinSF','GrLivArea','FullBath','HalfBath','BedroomAbvGr','KitchenAbvGr','TotRmsAbvGrd','Fireplaces','WoodDeckSF','OpenPorchSF','EnclosedPorch','3SsnPorch','ScreenPorch','PoolArea','MiscVal','MoSold','YrSold']\n",
     "test_X = test_data[features]\n",
     "\n",
     "# make predictions which we will submit. \n",
@@ -342,13 +342,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "ab04ba08",
+   "id": "588eff73",
    "metadata": {
     "papermill": {
-     "duration": 0.002279,
-     "end_time": "2026-04-06T23:37:07.647207",
+     "duration": 0.003342,
+     "end_time": "2026-04-06T23:41:47.065056",
      "exception": false,
-     "start_time": "2026-04-06T23:37:07.644928",
+     "start_time": "2026-04-06T23:41:47.061714",
      "status": "completed"
     },
     "tags": []
@@ -360,19 +360,19 @@
   {
    "cell_type": "code",
    "execution_count": 7,
-   "id": "00a87adc",
+   "id": "df5c2064",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:37:07.653530Z",
-     "iopub.status.busy": "2026-04-06T23:37:07.652713Z",
-     "iopub.status.idle": "2026-04-06T23:37:07.659279Z",
-     "shell.execute_reply": "2026-04-06T23:37:07.658609Z"
+     "iopub.execute_input": "2026-04-06T23:41:47.074343Z",
+     "iopub.status.busy": "2026-04-06T23:41:47.073121Z",
+     "iopub.status.idle": "2026-04-06T23:41:47.083303Z",
+     "shell.execute_reply": "2026-04-06T23:41:47.082189Z"
     },
     "papermill": {
-     "duration": 0.010884,
-     "end_time": "2026-04-06T23:37:07.660451",
+     "duration": 0.016458,
+     "end_time": "2026-04-06T23:41:47.084907",
      "exception": false,
-     "start_time": "2026-04-06T23:37:07.649567",
+     "start_time": "2026-04-06T23:41:47.068449",
      "status": "completed"
     },
     "tags": []
@@ -411,13 +411,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "12e29d2e",
+   "id": "dac30226",
    "metadata": {
     "papermill": {
-     "duration": 0.002453,
-     "end_time": "2026-04-06T23:37:07.666020",
+     "duration": 0.003593,
+     "end_time": "2026-04-06T23:41:47.092855",
      "exception": false,
-     "start_time": "2026-04-06T23:37:07.663567",
+     "start_time": "2026-04-06T23:41:47.089262",
      "status": "completed"
     },
     "tags": []
@@ -431,19 +431,19 @@
   {
    "cell_type": "code",
    "execution_count": 8,
-   "id": "9e21fd0e",
+   "id": "5a4ba0b5",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:37:07.672562Z",
-     "iopub.status.busy": "2026-04-06T23:37:07.672103Z",
-     "iopub.status.idle": "2026-04-06T23:37:07.683950Z",
-     "shell.execute_reply": "2026-04-06T23:37:07.683131Z"
+     "iopub.execute_input": "2026-04-06T23:41:47.101627Z",
+     "iopub.status.busy": "2026-04-06T23:41:47.101303Z",
+     "iopub.status.idle": "2026-04-06T23:41:47.118118Z",
+     "shell.execute_reply": "2026-04-06T23:41:47.116780Z"
     },
     "papermill": {
-     "duration": 0.016643,
-     "end_time": "2026-04-06T23:37:07.685294",
+     "duration": 0.023438,
+     "end_time": "2026-04-06T23:41:47.120011",
      "exception": false,
-     "start_time": "2026-04-06T23:37:07.668651",
+     "start_time": "2026-04-06T23:41:47.096573",
      "status": "completed"
     },
     "tags": []
@@ -459,13 +459,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "a1d28f8c",
+   "id": "1ddb16bb",
    "metadata": {
     "papermill": {
-     "duration": 0.00227,
-     "end_time": "2026-04-06T23:37:07.690486",
+     "duration": 0.003553,
+     "end_time": "2026-04-06T23:41:47.127613",
      "exception": false,
-     "start_time": "2026-04-06T23:37:07.688216",
+     "start_time": "2026-04-06T23:41:47.124060",
      "status": "completed"
     },
     "tags": []
@@ -539,13 +539,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "c9b96e75",
+   "id": "e8337e7a",
    "metadata": {
     "papermill": {
-     "duration": 0.002461,
-     "end_time": "2026-04-06T23:37:07.695332",
+     "duration": 0.003414,
+     "end_time": "2026-04-06T23:41:47.134566",
      "exception": false,
-     "start_time": "2026-04-06T23:37:07.692871",
+     "start_time": "2026-04-06T23:41:47.131152",
      "status": "completed"
     },
     "tags": []
@@ -595,14 +595,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 11.759245,
-   "end_time": "2026-04-06T23:37:08.316591",
+   "duration": 13.649732,
+   "end_time": "2026-04-06T23:41:48.161991",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2026-04-06T23:36:56.557346",
+   "start_time": "2026-04-06T23:41:34.512259",
    "version": "2.6.0"
   }
  },
