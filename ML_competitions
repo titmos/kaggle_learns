@@ -2,13 +2,13 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "baac5aae",
+   "id": "9a16a746",
    "metadata": {
     "papermill": {
-     "duration": 0.00423,
-     "end_time": "2026-04-06T23:14:42.510363",
+     "duration": 0.004345,
+     "end_time": "2026-04-06T23:26:21.008802",
      "exception": false,
-     "start_time": "2026-04-06T23:14:42.506133",
+     "start_time": "2026-04-06T23:26:21.004457",
      "status": "completed"
     },
     "tags": []
@@ -21,13 +21,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "6a4b9ce4",
+   "id": "eb83cec4",
    "metadata": {
     "papermill": {
-     "duration": 0.003024,
-     "end_time": "2026-04-06T23:14:42.516940",
+     "duration": 0.00329,
+     "end_time": "2026-04-06T23:26:21.015877",
      "exception": false,
-     "start_time": "2026-04-06T23:14:42.513916",
+     "start_time": "2026-04-06T23:26:21.012587",
      "status": "completed"
     },
     "tags": []
@@ -43,19 +43,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "75c82550",
+   "id": "307c538d",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:14:42.524872Z",
-     "iopub.status.busy": "2026-04-06T23:14:42.524566Z",
-     "iopub.status.idle": "2026-04-06T23:14:44.688846Z",
-     "shell.execute_reply": "2026-04-06T23:14:44.687996Z"
+     "iopub.execute_input": "2026-04-06T23:26:21.023972Z",
+     "iopub.status.busy": "2026-04-06T23:26:21.023635Z",
+     "iopub.status.idle": "2026-04-06T23:26:22.961987Z",
+     "shell.execute_reply": "2026-04-06T23:26:22.961091Z"
     },
     "papermill": {
-     "duration": 2.170365,
-     "end_time": "2026-04-06T23:14:44.690541",
+     "duration": 1.944464,
+     "end_time": "2026-04-06T23:26:22.963692",
      "exception": false,
-     "start_time": "2026-04-06T23:14:42.520176",
+     "start_time": "2026-04-06T23:26:21.019228",
      "status": "completed"
     },
     "tags": []
@@ -76,13 +76,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "1f9d8ebf",
+   "id": "de29ba96",
    "metadata": {
     "papermill": {
-     "duration": 0.002988,
-     "end_time": "2026-04-06T23:14:44.697006",
+     "duration": 0.003229,
+     "end_time": "2026-04-06T23:26:22.970534",
      "exception": false,
-     "start_time": "2026-04-06T23:14:44.694018",
+     "start_time": "2026-04-06T23:26:22.967305",
      "status": "completed"
     },
     "tags": []
@@ -94,19 +94,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "9391f549",
+   "id": "9dd153cb",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:14:44.704697Z",
-     "iopub.status.busy": "2026-04-06T23:14:44.704253Z",
-     "iopub.status.idle": "2026-04-06T23:14:47.549356Z",
-     "shell.execute_reply": "2026-04-06T23:14:47.548417Z"
+     "iopub.execute_input": "2026-04-06T23:26:22.978802Z",
+     "iopub.status.busy": "2026-04-06T23:26:22.978213Z",
+     "iopub.status.idle": "2026-04-06T23:26:25.684987Z",
+     "shell.execute_reply": "2026-04-06T23:26:25.683923Z"
     },
     "papermill": {
-     "duration": 2.85083,
-     "end_time": "2026-04-06T23:14:47.550955",
+     "duration": 2.71263,
+     "end_time": "2026-04-06T23:26:25.686482",
      "exception": false,
-     "start_time": "2026-04-06T23:14:44.700125",
+     "start_time": "2026-04-06T23:26:22.973852",
      "status": "completed"
     },
     "tags": []
@@ -116,7 +116,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Validation MAE for Random Forest Model: 21,924\n"
+      "Validation MAE for Random Forest Model: 18,115\n"
      ]
     }
    ],
@@ -133,7 +133,7 @@
     "y = home_data.SalePrice\n",
     "\n",
     "# Create X (After completing the exercise, you can return to modify this line!)\n",
-    "features = ['TotRmsAbvGrd','GrLivArea','LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']\n",
+    "features = ['YearRemodAdd','OverallQual', 'OverallCond','GrLivArea','LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']\n",
     "\n",
     "# Select columns corresponding to features, and preview the data\n",
     "X = home_data[features]\n",
@@ -154,19 +154,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "7890d89e",
+   "id": "bd35e2a4",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:14:47.559506Z",
-     "iopub.status.busy": "2026-04-06T23:14:47.559164Z",
-     "iopub.status.idle": "2026-04-06T23:14:47.564285Z",
-     "shell.execute_reply": "2026-04-06T23:14:47.563385Z"
+     "iopub.execute_input": "2026-04-06T23:26:25.695244Z",
+     "iopub.status.busy": "2026-04-06T23:26:25.694544Z",
+     "iopub.status.idle": "2026-04-06T23:26:25.699571Z",
+     "shell.execute_reply": "2026-04-06T23:26:25.698640Z"
     },
     "papermill": {
-     "duration": 0.011067,
-     "end_time": "2026-04-06T23:14:47.565752",
+     "duration": 0.010916,
+     "end_time": "2026-04-06T23:26:25.701069",
      "exception": false,
-     "start_time": "2026-04-06T23:14:47.554685",
+     "start_time": "2026-04-06T23:26:25.690153",
      "status": "completed"
     },
     "tags": []
@@ -179,19 +179,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "a5c8ee3d",
+   "id": "74d0eff3",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:14:47.574321Z",
-     "iopub.status.busy": "2026-04-06T23:14:47.573509Z",
-     "iopub.status.idle": "2026-04-06T23:14:47.695864Z",
-     "shell.execute_reply": "2026-04-06T23:14:47.694710Z"
+     "iopub.execute_input": "2026-04-06T23:26:25.709774Z",
+     "iopub.status.busy": "2026-04-06T23:26:25.709246Z",
+     "iopub.status.idle": "2026-04-06T23:26:25.753111Z",
+     "shell.execute_reply": "2026-04-06T23:26:25.752030Z"
     },
     "papermill": {
-     "duration": 0.128097,
-     "end_time": "2026-04-06T23:14:47.697335",
+     "duration": 0.050011,
+     "end_time": "2026-04-06T23:26:25.754708",
      "exception": false,
-     "start_time": "2026-04-06T23:14:47.569238",
+     "start_time": "2026-04-06T23:26:25.704697",
      "status": "completed"
     },
     "tags": []
@@ -225,13 +225,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "d0cd62e6",
+   "id": "2f6121cc",
    "metadata": {
     "papermill": {
-     "duration": 0.003278,
-     "end_time": "2026-04-06T23:14:47.704274",
+     "duration": 0.003314,
+     "end_time": "2026-04-06T23:26:25.761712",
      "exception": false,
-     "start_time": "2026-04-06T23:14:47.700996",
+     "start_time": "2026-04-06T23:26:25.758398",
      "status": "completed"
     },
     "tags": []
@@ -247,19 +247,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "f158dcdb",
+   "id": "5d2ecee7",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:14:47.712664Z",
-     "iopub.status.busy": "2026-04-06T23:14:47.711869Z",
-     "iopub.status.idle": "2026-04-06T23:14:48.500280Z",
-     "shell.execute_reply": "2026-04-06T23:14:48.499225Z"
+     "iopub.execute_input": "2026-04-06T23:26:25.769827Z",
+     "iopub.status.busy": "2026-04-06T23:26:25.769494Z",
+     "iopub.status.idle": "2026-04-06T23:26:26.682658Z",
+     "shell.execute_reply": "2026-04-06T23:26:26.681598Z"
     },
     "papermill": {
-     "duration": 0.794255,
-     "end_time": "2026-04-06T23:14:48.501872",
+     "duration": 0.919221,
+     "end_time": "2026-04-06T23:26:26.684366",
      "exception": false,
-     "start_time": "2026-04-06T23:14:47.707617",
+     "start_time": "2026-04-06T23:26:25.765145",
      "status": "completed"
     },
     "tags": []
@@ -289,13 +289,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "b8f950ca",
+   "id": "8016df58",
    "metadata": {
     "papermill": {
-     "duration": 0.003675,
-     "end_time": "2026-04-06T23:14:48.509702",
+     "duration": 0.003841,
+     "end_time": "2026-04-06T23:26:26.692240",
      "exception": false,
-     "start_time": "2026-04-06T23:14:48.506027",
+     "start_time": "2026-04-06T23:26:26.688399",
      "status": "completed"
     },
     "tags": []
@@ -307,19 +307,19 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "0b03f241",
+   "id": "e3a61c20",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:14:48.518611Z",
-     "iopub.status.busy": "2026-04-06T23:14:48.517952Z",
-     "iopub.status.idle": "2026-04-06T23:14:48.582459Z",
-     "shell.execute_reply": "2026-04-06T23:14:48.581594Z"
+     "iopub.execute_input": "2026-04-06T23:26:26.701526Z",
+     "iopub.status.busy": "2026-04-06T23:26:26.701198Z",
+     "iopub.status.idle": "2026-04-06T23:26:26.774619Z",
+     "shell.execute_reply": "2026-04-06T23:26:26.773776Z"
     },
     "papermill": {
-     "duration": 0.070713,
-     "end_time": "2026-04-06T23:14:48.584178",
+     "duration": 0.080119,
+     "end_time": "2026-04-06T23:26:26.776347",
      "exception": false,
-     "start_time": "2026-04-06T23:14:48.513465",
+     "start_time": "2026-04-06T23:26:26.696228",
      "status": "completed"
     },
     "tags": []
@@ -334,7 +334,7 @@
     "\n",
     "# create test_X which comes from test_data but includes only the columns you used for prediction.\n",
     "# The list of columns is stored in a variable called features\n",
-    "features = ['TotRmsAbvGrd','GrLivArea','LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']\n",
+    "features = ['YearRemodAdd','OverallQual', 'OverallCond','GrLivArea','LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']\n",
     "test_X = test_data[features]\n",
     "\n",
     "# make predictions which we will submit. \n",
@@ -343,13 +343,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "7ce0c028",
+   "id": "78e885b6",
    "metadata": {
     "papermill": {
-     "duration": 0.003675,
-     "end_time": "2026-04-06T23:14:48.592187",
+     "duration": 0.003556,
+     "end_time": "2026-04-06T23:26:26.783792",
      "exception": false,
-     "start_time": "2026-04-06T23:14:48.588512",
+     "start_time": "2026-04-06T23:26:26.780236",
      "status": "completed"
     },
     "tags": []
@@ -361,19 +361,19 @@
   {
    "cell_type": "code",
    "execution_count": 7,
-   "id": "d93ad4b0",
+   "id": "998f57cf",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:14:48.601701Z",
-     "iopub.status.busy": "2026-04-06T23:14:48.600819Z",
-     "iopub.status.idle": "2026-04-06T23:14:48.608632Z",
-     "shell.execute_reply": "2026-04-06T23:14:48.607619Z"
+     "iopub.execute_input": "2026-04-06T23:26:26.793017Z",
+     "iopub.status.busy": "2026-04-06T23:26:26.792176Z",
+     "iopub.status.idle": "2026-04-06T23:26:26.799805Z",
+     "shell.execute_reply": "2026-04-06T23:26:26.798951Z"
     },
     "papermill": {
-     "duration": 0.01478,
-     "end_time": "2026-04-06T23:14:48.610706",
+     "duration": 0.01375,
+     "end_time": "2026-04-06T23:26:26.801267",
      "exception": false,
-     "start_time": "2026-04-06T23:14:48.595926",
+     "start_time": "2026-04-06T23:26:26.787517",
      "status": "completed"
     },
     "tags": []
@@ -412,13 +412,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "0dd122ae",
+   "id": "2c8015ff",
    "metadata": {
     "papermill": {
-     "duration": 0.004216,
-     "end_time": "2026-04-06T23:14:48.619242",
+     "duration": 0.003765,
+     "end_time": "2026-04-06T23:26:26.809157",
      "exception": false,
-     "start_time": "2026-04-06T23:14:48.615026",
+     "start_time": "2026-04-06T23:26:26.805392",
      "status": "completed"
     },
     "tags": []
@@ -432,19 +432,19 @@
   {
    "cell_type": "code",
    "execution_count": 8,
-   "id": "fbf09f49",
+   "id": "24c69583",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-04-06T23:14:48.632105Z",
-     "iopub.status.busy": "2026-04-06T23:14:48.631290Z",
-     "iopub.status.idle": "2026-04-06T23:14:48.647711Z",
-     "shell.execute_reply": "2026-04-06T23:14:48.646844Z"
+     "iopub.execute_input": "2026-04-06T23:26:26.818497Z",
+     "iopub.status.busy": "2026-04-06T23:26:26.817751Z",
+     "iopub.status.idle": "2026-04-06T23:26:26.831342Z",
+     "shell.execute_reply": "2026-04-06T23:26:26.830303Z"
     },
     "papermill": {
-     "duration": 0.024745,
-     "end_time": "2026-04-06T23:14:48.649479",
+     "duration": 0.020192,
+     "end_time": "2026-04-06T23:26:26.833202",
      "exception": false,
-     "start_time": "2026-04-06T23:14:48.624734",
+     "start_time": "2026-04-06T23:26:26.813010",
      "status": "completed"
     },
     "tags": []
@@ -460,13 +460,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "f54e4c39",
+   "id": "29e0037b",
    "metadata": {
     "papermill": {
-     "duration": 0.004163,
-     "end_time": "2026-04-06T23:14:48.658041",
+     "duration": 0.003743,
+     "end_time": "2026-04-06T23:26:26.841252",
      "exception": false,
-     "start_time": "2026-04-06T23:14:48.653878",
+     "start_time": "2026-04-06T23:26:26.837509",
      "status": "completed"
     },
     "tags": []
@@ -540,13 +540,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "84021e64",
+   "id": "b32739e2",
    "metadata": {
     "papermill": {
-     "duration": 0.004977,
-     "end_time": "2026-04-06T23:14:48.667123",
+     "duration": 0.003538,
+     "end_time": "2026-04-06T23:26:26.848686",
      "exception": false,
-     "start_time": "2026-04-06T23:14:48.662146",
+     "start_time": "2026-04-06T23:26:26.845148",
      "status": "completed"
     },
     "tags": []
@@ -596,14 +596,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 12.043666,
-   "end_time": "2026-04-06T23:14:49.290534",
+   "duration": 11.316494,
+   "end_time": "2026-04-06T23:26:27.472699",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2026-04-06T23:14:37.246868",
+   "start_time": "2026-04-06T23:26:16.156205",
    "version": "2.6.0"
   }
  },
